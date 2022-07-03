@@ -9,3 +9,4 @@ const getInfo = (list) => [...list].forEach(child => {
 })
 
 getInfo(childrenList);
+
