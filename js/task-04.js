@@ -21,13 +21,13 @@ encrement.addEventListener('click', () => {
 
 //     return function (number) {
 //         decrementBtn.addEventListener('click', () => {
-//             startValue -= number;
-//             countEl.textContent = startValue;
+//         startValue -= number;
+//         countEl.textContent = startValue;
 //         });
         
-//     encrement.addEventListener('click', () => {
-//     startValue += number;
-//     countEl.textContent = startValue;
+//         encrement.addEventListener('click', () => {
+//         startValue += number;
+//         countEl.textContent = startValue;
 // })
 //     }
 // }

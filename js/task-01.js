@@ -1,4 +1,5 @@
 const allCategories = document.querySelector('#categories');
+
 const childrenList = allCategories.children;
 console.log(`Number of categoris ${childrenList.length}`)
 
@@ -9,4 +10,3 @@ const getInfo = (list) => [...list].forEach(child => {
 })
 
 getInfo(childrenList);
-

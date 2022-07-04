@@ -12,23 +12,22 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// const gallery = document.querySelector('.gallery')
 
-const addImages = images => {
-  const gallery = document.querySelector('.gallery')
-  const itemImages = images.map(({ url, alt }) => `<li class ="item"><img class="item-img" src = ${url} alt = ${alt}></li>`).join('');
-  gallery.insertAdjacentHTML("beforeend", itemImages);
-  return gallery
-}
-const galleryEl = addImages(images);
-console.log(galleryEl)
+// const addImages = images => images.map(({ url, alt }) => `<li class ="item"><img class="item-img" src = ${url} alt = ${alt}></li>`).join('');
+
+// const galleryEl = addImages(images);
+// gallery.insertAdjacentHTML("beforeend", galleryEl);
+// console.log(gallery)
 
 
 // ВТОРОЙ ВАРИАНТ 
 
-// function createGallery(list) {
+// const createGalery = list => {
 //   const listEl = document.querySelector(".gallery")
 //   const markup = list.map(({ url, alt}) => `<li class ="item"><img class="item-img" src= ${url} alt= ${alt}></li>`).join('')
 //   listEl.insertAdjacentHTML("beforeend", markup)
 //   return listEl
 // }
-// console.log(createGallery(images))
+
+// console.log(createGalary(images))
