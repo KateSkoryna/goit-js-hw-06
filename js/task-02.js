@@ -12,7 +12,7 @@ const itemsList = document.querySelector('#ingredients');
 const getItems = items => items.map(item => {
   const itemEl = document.createElement('li')
   itemEl.classList.add('item')
-    itemEl.textContent = `${item}`
+  itemEl.textContent = `${item}`
   return itemEl;
 })
 

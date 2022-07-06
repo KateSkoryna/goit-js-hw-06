@@ -1,36 +1,54 @@
-const counterEl = document.querySelectorAll('#counter button');
-const decrementBtn = counterEl[0];
-const encrement = counterEl[1];
+const decrementBtn = document.querySelector('[data-action="decrement"]')
+const incrementBtn = document.querySelector('[data-action = increment]')
 const countEl = document.querySelector('#value')
 let currentValue = 0;
 
+
 decrementBtn.addEventListener('click', () => {
-    currentValue -= 1;
-    countEl.textContent = currentValue;
+    countEl.textContent =  currentValue -= 1;
 })
 
-encrement.addEventListener('click', () => {
-    currentValue += 1;
-    countEl.textContent = currentValue;
+incrementBtn.addEventListener('click', () => {
+    countEl.textContent =  currentValue += 1;
 })
 
-// ВАРИАНТ 2. Чуток поразвлекалась с замыканием
+// ВАРИАНТ ЧЕРЕЗ ФУНКЦИЮ
+// const getCount = () => {
+// const decrementBtn = document.querySelector('[data-action="decrement"]')
+// const incrementBtn = document.querySelector('[data-action = increment]')
+// const countEl = document.querySelector('#value')
+// let currentValue = 0;
 
-// const counterRef = v => {
+// decrementBtn.addEventListener('click', () => {
+//     countEl.textContent =  currentValue -= 1;
+// })
+
+// incrementBtn.addEventListener('click', () => {
+//     countEl.textContent =  currentValue += 1;
+// })
+// }
+
+// getCount()
+
+
+// ВАРИАНТ 3. Чуток поразвлекалась с замыканием
+
+// const makeCount = v => {
+//     const decrementBtn = document.querySelector('[data-action="decrement"]')
+//     const incrementBtn = document.querySelector('[data-action = increment]')
+//     const countEl = document.querySelector('#value')
 //     let startValue = v;
 
 //     return function (number) {
-//         decrementBtn.addEventListener('click', () => {
-//         startValue -= number;
-//         countEl.textContent = startValue;
-//         });
-        
-//         encrement.addEventListener('click', () => {
-//         startValue += number;
-//         countEl.textContent = startValue;
+//     decrementBtn.addEventListener('click', () => {
+//     countEl.textContent = startValue -= 1;
+// })
+
+//     incrementBtn.addEventListener('click', () => {
+//     countEl.textContent = startValue += 1;
 // })
 //     }
 // }
 
-// const counter = counterRef(0);
+// const counter = makeCount(0);
 // counter(1)
