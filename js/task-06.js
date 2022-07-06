@@ -3,7 +3,6 @@ const input = document.querySelector('input');
 const toggleClass = (el, addClass, removeClass) => {
     el.classList.add(addClass)
     el.classList.remove(removeClass);
-    
 }
 
 const validateInput = () => {

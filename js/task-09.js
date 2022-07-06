@@ -12,5 +12,3 @@ function changeColor() {
   bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
   text.textContent = `${getRandomHexColor()}`;
 }
-
-
