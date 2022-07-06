@@ -9,7 +9,7 @@ createBtn.addEventListener('click', () => createBoxes(inputEl.value));
 destroyBtn.addEventListener('click', destroyBoxes);
 
 function createBoxes(amount) {
-  let size = 30;
+  let size = 20;
 
   for (let i = 0; i < amount; i += 1) {
     size = size + 10;
