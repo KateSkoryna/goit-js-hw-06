@@ -42,6 +42,8 @@ button {
   width: 100%;
 }
 
+/* СТИЛИЗАЦИЯ ЦВЕТНЫХ КВАДРАТОВ */
+
 #boxes {
   display: flex;
   justify-content: flex-start;
