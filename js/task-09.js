@@ -9,6 +9,6 @@ function getRandomHexColor() {
 }
 
 function changeColor() {
-  bodyRef.style.backgroundColor = `${getRandomHexColor()}`;
-  text.textContent = `${getRandomHexColor()}`;
+  bodyRef.style.backgroundColor = getRandomHexColor();
+  text.textContent = getRandomHexColor();
 }

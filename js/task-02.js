@@ -12,7 +12,7 @@ const itemsList = document.querySelector('#ingredients');
 const getItems = items => items.map(item => {
   const itemEl = document.createElement('li')
   itemEl.classList.add('item')
-  itemEl.textContent = `${item}`
+  itemEl.textContent = item;
   return itemEl;
 })
 
@@ -20,6 +20,7 @@ const ingredientsItems = getItems(ingredients);
 itemsList.append(...ingredientsItems)
 
 console.log(itemsList)
+
 
 
 // ВТОРОЙ ВАРИАНТ. КАКОЙ ЛУЧШЕ И ПОЧЕМУ?
@@ -40,3 +41,17 @@ console.log(itemsList)
 
 // const ingredientsList = getItems(ingredients);
 // console.log(ingredientsList)
+
+// const list = document.querySelector('#ingredients')
+
+// const createIngredient = (elements) => {
+//   const array = [];
+//   for (let i = 0; i < elements.length; i += 1) {
+//     const ingredient = document.createElement('li')
+//     ingredient.textContent = elements[i]
+//    array.push(ingredient)
+//   }
+//    list.append(...array)
+// }
+
+// createIngredient(ingredients)

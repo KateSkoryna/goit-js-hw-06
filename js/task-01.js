@@ -1,4 +1,5 @@
 const allCategories = document.querySelector('ul').children;
+
 console.log(`Number of categoris ${allCategories.length}`)
 
 const allInfoEl = [...allCategories].forEach(item => {
